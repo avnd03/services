@@ -1,0 +1,6 @@
+writable/*
+app/Config/App.php
+app/Config/Database.php
+app/.DS_Store
+*/.DS_Store
+.htaccess
