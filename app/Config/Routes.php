@@ -42,9 +42,20 @@ $routes->set404Override();
 
     $routes->get('/service-list', 'ServiceRepair::index');
     $routes->get('/new-service', 'ServiceRepair::newService');
+    $routes->post('create-service', 'ServiceRepair::saveService');
+    $routes->get('edit-service/(:num)', 'ServiceRepair::editService');
+    $routes->get('/service-detail/(:num)', 'ServiceRepair::serviceDetail');
+    $routes->post('get-service-details', 'ServiceRepair::getServiceDetails');
+    $routes->post('save-report', 'ServiceRepair::saveReport');
 
     $routes->get('/customers', 'Customer::index');
-    $routes->get('/edit-customer', 'Customer::editCustomer');
+    $routes->post('/save-customer', 'Customer::saveCustomer');
+    $routes->post('/get-customer', 'Customer::getCustomer');
+
+    $routes->post('/get-category', 'Settings::getCategory');
+    $routes->post('/save-category', 'Settings::saveCategory');
+
+    $routes->match(['get', 'post'], '/settings/(:any)', 'Settings::index');
 
 
   //Default Route

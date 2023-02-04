@@ -2410,7 +2410,6 @@ progress {
   opacity: 1;
 }
 .form-control:disabled, .dataTable-input:disabled, .form-control[readonly], [readonly].dataTable-input {
-  background-color: #e0e5ec;
   opacity: 1;
 }
 .form-control::-webkit-file-upload-button, .dataTable-input::-webkit-file-upload-button {

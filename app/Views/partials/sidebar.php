@@ -29,7 +29,7 @@
                 <!-- Sidenav Accordion (Pages)-->
                 <a class="nav-link" href="<?=site_url('/service-list')?>" >
                     <div class="nav-link-icon"><i data-feather="list"></i></div>
-                    Services List
+                    Service Repairs List
                 </a>
 
                 <!-- Sidenav Accordion (Applications)-->
@@ -46,9 +46,9 @@
                 </a>
                 <div class="collapse" id="collapseUtilities" data-bs-parent="#accordionSidenav">
                     <nav class="sidenav-menu-nested nav">
-                        <a class="nav-link" href="animations.html">Service Categories</a>
-                        <a class="nav-link" href="background.html">Users</a>
-                        <a class="nav-link" href="borders.html">Borders</a>
+                        <a class="nav-link" href="<?=site_url('/settings/application')?>">Application</a>
+                        <a class="nav-link" href="<?=site_url('/settings/service-categories')?>">Service Categories</a>
+                        <a class="nav-link" href="<?=site_url('/settings/users')?>">Users</a>
                     </nav>
                 </div>
 

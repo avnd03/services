@@ -8,6 +8,11 @@ class CustomerModel extends Model
   protected $table      = 'customers';
 	protected $primaryKey = 'id';
 
-  protected $allowedFields = ['name', 'email', 'phone', 'city', 'address'];
+  protected $allowedFields = ['name', 'email', 'phone', 'city', 'address', 'status'];
+
+  protected $useTimestamps = true;
+	protected $createdField  = 'created';
+	protected $updatedField  = 'modified';
+	protected $dateFormat  	 = 'datetime';
 
 }
